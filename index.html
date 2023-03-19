@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Conscientização sobre a Extinção do Rinoceronte Branco Africano</title>
+	<link rel="stylesheet" type="text/css" href="./style/stylle.css">
+
+</head>
+<body>
+	<header>
+		<h1>Conscientização sobre a Extinção do Rinoceronte Branco Africano</h1>
+	</header>
+
+	<main>
+		<div class="container">
+			<img src="./imagem/ryan-jubber-HvhRPWBZG2s-unsplash.jpg" alt="Rinoceronte Branco Africano">
+
+			<div id="slideshow">
+				<p>A população de rinocerontes brancos africanos diminuiu em 98,5% nas últimas décadas.</p>
+				<p>Com menos de 20 indivíduos remanescentes na natureza, a espécie está à beira da extinção.</p>
+				<p>Esta espécie ocorre maioritariamente na África do Sul, no Zimbabué e no Quénia. Encontra-se Quase Ameaçada, segundo o IUCN, devido à contínua e crescente caça furtiva e à alta procura clandestina do chifre destes grandes mamíferos</p>
+                <p>A doação para instituições com foco na restauração do rinoceronte branco africano é uma forma
+                     importante de ajudar a preservar essa espécie.</p>
+                    
+			</div>
+
+			<div class="donate">
+				<h2>Contribua para a restauração do rinoceronte branco africano</h2>
+				<form action="https://www.example.com/doacao" method="post">
+					<label for="nome">Nome:</label>
+					<input type="text" id="nome" name="nome" required>
+
+					<label for="email">E-mail:</label>
+					<input type="email" id="email" name="email" required>
+
+					<label for="valor">Valor:</label>
+					<input type="number" id="valor" name="valor" min="1" required>
+
+					<button type="submit">Doar</button>
+				</form>
+			</div>
+		</div>
+	</main>
+
+    <footer><h3>União Internacional para a Conservação da Natureza (IUCN), o World Wildlife Fund (WWF) e a African Wildlife Foundation.</h3></footer>
+
+	<script src="script.js">
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementById("slideshow").getElementsByTagName("p");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 5000); // Altera a imagem a cada 5 segundos
+}
+
+        </script>
+</body>
+</html>

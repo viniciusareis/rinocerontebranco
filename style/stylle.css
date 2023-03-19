@@ -1,0 +1,81 @@
+body {
+	background-color: rgb(145, 219, 120);
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #006600;
+	color: #fff;
+	padding: 20px;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+#slideshow p {
+	display: inline-block;
+}
+
+.donate {
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #ccc;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+label {
+	margin-left: 23px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 87%;
+	margin-left: 23px;
+}
+
+button {
+	margin-left: 40%;
+	background-color: #006600;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #004400;
+}
+footer{
+	height: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>h3{
+	display: flex;
+    margin: auto;
+    margin-left: 15%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-size: 16px;    color: #004400;
+}
